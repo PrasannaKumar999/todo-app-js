@@ -1,0 +1,131 @@
+body{
+    background-color: black;
+}
+#tasks{
+    font-size: 40px;
+    color: white;
+    position: relative;
+    top:8vh;
+    left: 8vw;
+}
+.material-icons,#text{
+    color:lightblue;  
+    cursor: pointer;
+    font-size:30px; 
+    vertical-align: middle;
+    position: relative;
+    left:60vw;
+    top:2vh;
+}
+#itemstext{
+    color: white;
+    font-size: 35px;
+    position: relative;
+    top:8vh;
+    left:8vw;
+}
+#box{
+    height:200px;
+    width:350px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    position: absolute;
+    top:30vh;
+    left:40vw;
+    display: flex;
+    text-align: center;
+    line-height:65px;
+}
+#boxtext,#boxtext2{
+    font-size: 28px;
+    color:tomato;
+}
+.inputtext,.inputtext2{
+    width:60%;
+   height:30px;
+}
+#addbtn,#closebtn,#addbtn2,#closebtn2{
+    background-color: tomato;
+    color: white;
+    border: none;
+    width:60px;
+    height: 30px;
+    cursor: pointer;
+    margin: 15px;
+    border-radius: 5px;
+}
+.totalbox{
+    background-color:black;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    position: relative;
+    top:80px;
+}
+.box{
+    width:220px;
+    height:300px;
+    background-color: aliceblue;
+    border-radius:5%;
+    margin:30px;
+    position: relative;
+}
+.box-heading{
+    padding: 0px 0px 10px 0px;
+    text-align: center;
+    color: red;
+    border-bottom: 1px solid grey;
+}
+.add-icon{
+    background-image: url(./add_circle_black_24dp.svg);
+    background-size: contain;
+    cursor: pointer;
+    position: absolute;
+    right:8%;
+    bottom:15%;
+    width:30px;
+    height:30px;
+}
+.delete-icon{
+    background-image: url(./delete_black_24dp.svg);
+    background-size: contain;
+    cursor: pointer;
+    position: absolute;
+    right:30%;
+    bottom:15%;
+    width:30px;
+    height:30px;
+}
+#addbox{
+    height:200px;
+    width:350px;
+    background-color: aliceblue;
+    border-radius: 20px;
+    position: absolute;
+    top:30vh;
+    left:40vw;
+    display: flex;
+    text-align: center;
+    line-height:65px;
+}
+.inputtext2{
+   height:30px;
+}
+.box-text{
+    text-align: center;
+    color:navy;
+    font-size:20px;
+    margin:10px;
+}
+.markdone{
+    cursor:pointer;
+    font-size: 10px;
+    background-color: rgb(84, 12, 250);
+    color: white;
+    border-radius:5px;
+    border: none;
+    font-weight:500;
+    margin-left: 15px;
+}
