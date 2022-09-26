@@ -1,131 +1,337 @@
 body{
-    background-color: black;
+    background-color: #3D087B;
 }
-#tasks{
-    font-size: 40px;
-    color: white;
-    position: relative;
-    top:8vh;
-    left: 8vw;
-}
-.material-icons,#text{
-    color:lightblue;  
-    cursor: pointer;
-    font-size:30px; 
-    vertical-align: middle;
-    position: relative;
-    left:60vw;
-    top:2vh;
-}
-#itemstext{
-    color: white;
-    font-size: 35px;
-    position: relative;
-    top:8vh;
-    left:8vw;
-}
-#box{
-    height:200px;
-    width:350px;
-    background-color: aliceblue;
-    border-radius: 20px;
+.clock{
     position: absolute;
-    top:30vh;
-    left:40vw;
-    display: flex;
-    text-align: center;
-    line-height:65px;
+    left:12vw;
+    top:5vw;
+    display:block;
 }
-#boxtext,#boxtext2{
-    font-size: 28px;
-    color:tomato;
-}
-.inputtext,.inputtext2{
-    width:60%;
-   height:30px;
-}
-#addbtn,#closebtn,#addbtn2,#closebtn2{
-    background-color: tomato;
-    color: white;
-    border: none;
-    width:60px;
-    height: 30px;
-    cursor: pointer;
-    margin: 15px;
-    border-radius: 5px;
-}
-.totalbox{
-    background-color:black;
+.messagetop{
+    width:12vw;
+    height:8vh;
+    background-color: aliceblue;
+    border-radius: 10px;
     padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-evenly;
-    position: relative;
-    top:80px;
+    position:absolute;
+    left:36vw;
+    top:6vh;
+    color: #858585;
 }
-.box{
-    width:220px;
-    height:300px;
-    background-color: aliceblue;
-    border-radius:5%;
-    margin:30px;
-    position: relative;
-}
-.box-heading{
-    padding: 0px 0px 10px 0px;
-    text-align: center;
-    color: red;
-    border-bottom: 1px solid grey;
-}
-.add-icon{
-    background-image: url(./add_circle_black_24dp.svg);
-    background-size: contain;
-    cursor: pointer;
-    position: absolute;
-    right:8%;
-    bottom:15%;
-    width:30px;
-    height:30px;
-}
-.delete-icon{
-    background-image: url(./delete_black_24dp.svg);
-    background-size: contain;
-    cursor: pointer;
-    position: absolute;
-    right:30%;
-    bottom:15%;
-    width:30px;
-    height:30px;
-}
-#addbox{
-    height:200px;
-    width:350px;
-    background-color: aliceblue;
-    border-radius: 20px;
+.leftbox1{
+    width:40vw;
+    height:50vh;
+    background-color: white;
+    border-radius: 10px;
     position: absolute;
     top:30vh;
-    left:40vw;
+    left:10vw;
+}
+select{
+    width:15vw;
+    height: 5vh;
+    border: 1px solid #EDEDED;
+    border-radius: 4px;
+    opacity: 1;
+    text-align: center;
+}
+.line1,.line2,.line3,.line4{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding:1vh 0vh;
+  margin-top:4px;
+}
+.verline{
+    border-left: 1px solid grey;
+    height:25px;
+    margin-left:50px;
+}
+#icon{
+    color: #3D087B;
+    font-weight: 600;
+    font-size:30px;
+}
+#leftbox2{
+    width:36vw;
+    height:10vh;
+    background-color: #8A11BF;
+    border-radius: 10px;
+    position: absolute;
+    top:80vh;
+    left:10vw;
+    margin-top:40px;
+    text-align: left;
+    font: normal normal 900 27px/34px Bauhaus Hv BT;
     display: flex;
-    text-align: center;
-    line-height:65px;
+    justify-content: center;
+    letter-spacing: 0px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    opacity: 1;
+    
 }
-.inputtext2{
-   height:30px;
-}
-.box-text{
-    text-align: center;
-    color:navy;
-    font-size:20px;
-    margin:10px;
-}
-.markdone{
-    cursor:pointer;
-    font-size: 10px;
-    background-color: rgb(84, 12, 250);
+button{
+    position: absolute;
+    top:92vh;
+    left:10vw;
+    margin-top: 50px;
+    width: 20vw;
+    height:6vh;
+    background-color: #8E53F0;
+    border-radius: 5px;
     color: white;
-    border-radius:5px;
-    border: none;
-    font-weight:500;
-    margin-left: 15px;
+    text-align: left;
+    font: normal normal 600 24px/38px Manrope;
+    color: #FFFFFF;
+    border: 0px;
+    text-align:center;
+    background: transparent linear-gradient(113deg, #6E54EC 0%, #CB52F8 40%, #FC5EFF 81%, #F1A7C5 100%);
+}
+button:hover{
+    background: transparent linear-gradient(113deg, #F1A7C5 0%, #FC5EFF 40%, #CB52F8 81%, #6E54EC 100%);
+    cursor:pointer;
+}
+button:hover span{
+    display: none;
+}
+button:hover:before{
+    content: "party time!";
+}
+.leftbox3{
+   background-color:#8E53F0;
+   display: inline-block;
+   padding:1vw;
+   width:16vw;
+   height:10vh;
+   border-radius: 10px;
+   color:#F25CFE;
+   position: absolute;
+   top:100vh;
+   left:32vw;
+}
+.totalrightbox{
+    position: relative;
+}
+.rightbox1{
+    position:absolute;
+    top:15vh;
+    left:52vw;
+    width:40vw;
+    height:20vh;
+    background-color: white;
+    border-radius: 10px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    z-index:3;
+}
+.time{
+    color:#5F0089;
+    font-weight: 600;
+}
+#hours,#mins,#secs{
+    background: url(./Images/timeline.svg);
+    width:4em;
+    height:3em;
+    text-align: center;
+    padding-top: 20px;
+    font: normal normal normal 23px/28px Barlow;
+    color: #5F0089;
+}
+.hours,.mins,.secs{
+    background: url(./Images/timeline.svg);
+    width:4em;
+    height:3em;
+    text-align: center;
+    padding-top: 20px;
+    font: normal normal normal 23px/28px Barlow;
+    color: #5F0089;
+}
+.AM{
+    background: url(./Images/AM_svg.svg);
+    width:6em;
+    height:6em;
+    font-weight: 800;
+    background-repeat:no-repeat;
+    background-position:center;
+    text-align: center;
+    line-height:80px;
+}
+#ap{
+    font-size: 26px;
+    color:white ;
+}
+.colon{
+    font-size:2em;
+    color:#5F0089;
+}
+.irightbox2{
+    position: absolute;
+    top:18vh;
+    left:55vw;
+    width:35vw;
+    height:20vh;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    z-index:2;
+    opacity: 0.5;
+}
+.irightbox3{
+    position: absolute;
+    top:21vh;
+    left:58vw;
+    width:30vw;
+    height:20vh;
+    background-color: white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    z-index:1;
+    opacity: 0.3;
+}
+#rightbox2{
+    position: absolute;
+    top:45vh;
+    left:52vw;
+    width:40vw;
+    height:20vh;
+    background-color: white;
+    border-radius: 10px;
+    text-align: left;
+    font: normal normal 900 25px/40px Bauhaus Hv BT;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #8E53F0;
+}
+#rightbox3{
+    position: absolute;
+    top:70vh;
+    left:52vw;
+    width:40vw;
+    height:50vh;
+    background-image: url(./Images/Component\ 30\ –\ 1.svg);
+    background-position: center;
+
+}
+.bottommessage{
+    width:18vw;
+    height:5vh;
+    background-color: white;
+    border-radius: 10px;
+    color: #858585;
+    position: absolute;
+    top:110vh;
+    left: 10vw;
+    padding: 1vw;
+}
+@media  (max-width:425px) {
+    .messagetop{
+        display: none;
+    }
+    .clock{
+        position: absolute;
+        left:10vw;
+    }
+    .rightbox1{
+        position: absolute;
+        left:10vw;
+        top:20vh;
+        width:80vw;
+       font-size: 10px;
+       display: flex;
+    }
+    .irightbox2{
+        position: absolute;
+        left:14vw;
+        top:22vh;
+        width:70vw;
+    }
+    .irightbox3{
+        position: absolute;
+        left:18vw;
+        top:24vh;
+        width:60vw;
+    }
+    .hours,.mins,.secs{
+        background: url(./Images/timeline.svg);
+        width:3em;
+        height:3em;
+        text-align: center;
+        padding-top: 20px;
+        font-size: 16px;
+        color: #5F0089;
+    }
+    .rightbox2{
+        position: absolute;
+        left:12vw;
+        margin-top: 20px;
+        width:80vw;
+        text-align: center;
+        font-size: 14px;
+    }
+    .leftbox1{
+        position: absolute;
+        top:72vh;
+        left: 12vw;
+        width: 80vw;
+    }
+    .verline{
+        margin-left:9.5vw;
+    }
+    .line1,.line2,.line3,.line4{
+       
+      }
+    .leftbox2{
+        position:absolute;
+        top:118vh;
+        left: 12vw;
+        width: 80vw;
+        font-size: 10px;
+        text-align: center;
+    }
+    button{
+        position:absolute;
+        top:128vh;
+        left: 12vw;
+        width: 80vw;
+        font-size: 16px;
+        text-align: center;
+    }
+    button:hover{
+        background: transparent linear-gradient(113deg, #F1A7C5 0%, #FC5EFF 40%, #CB52F8 81%, #6E54EC 100%);
+        cursor:pointer;
+    }
+    button:hover span{
+        display: none;
+    }
+    button:hover:before{
+        content: "party time!";
+    }
+    .leftbox3{
+        position:absolute;
+        top:145vh;
+        left: 12vw;
+        width: 80vw;
+        height:14vh;
+        font-size: 16px;
+        text-align: center;
+    }
+    .rightbox3{
+        position:absolute;
+        top:162vh;
+        left: 12vw;
+        width: 80vw;
+    }
+    .bottommessage{
+        display: none;
+    }
 }
